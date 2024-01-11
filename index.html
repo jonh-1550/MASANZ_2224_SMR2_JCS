@@ -1,0 +1,73 @@
+<!doctype HTML>
+<html>
+	<head>
+		<title>Jonathan Costa</title>
+	</head>
+	
+	<style>
+		
+		
+		
+	</style>
+	
+	<body>
+		
+		<form action="mostrardatos.php" method="post">
+		
+			<label for="fname">Nombre:</label>
+				<input type="text" name="fname">
+				
+			<label for="lname">Apellido:</label>
+				<input type="text" name="lname">
+				
+			<br><br>
+			
+			<label for="birthdate">Fecha de nacimiento:</label>
+				<input type="date" name="birthdate">
+			
+			<br><br>
+			
+		Estado Civil: <br>
+				
+			<label for="solter">Soltero/a</label>
+				<input type="radio" id="solter" name="civil-state" value="Soltero" required>
+			
+			<label for="casad">Casado/a</label>
+				<input type="radio" id="casad" name="civil-state" value="Casado" required>
+			
+			<label for="divorciad">Divorciado/a</label>
+				<input type="radio" id="divorciad" name="civil-state" value="Divorciado"required>
+				
+			<label for="viud">Viudo/a</label>
+				<input type="radio" id="viud" name="civil-state" value="Viudo"required>	
+				
+				<br><br>
+				
+		Hijos:<br>
+		
+			<label for="male"> Hijo</label>
+				<input type="checkbox" id="male" name="child[]" value="Hijo">
+			
+			
+			<label for="female"> Hija</label>
+				<input type="checkbox" id="female" name="child[]" value="Hija">
+				
+		<!--	<label for="none"> Ninguno</label>
+				<input type="checkbox" id="none" name="child" value="Ninguno">
+		-->	
+				<br><br>
+			
+		Condiciones:<br>
+			
+			<label for="cookies"> He le&#237;do y acepto los <a href="http://172.20.11.105/JCS_pagina10/condiciones.html" target="blank">t&#233;rminos y condiciones</a></label>
+				<input type="checkbox" name="coockies" required>
+			
+				<br><br>
+			
+			<input type="submit" value="Enviar">
+			<input type="reset" value="Borrar">
+		</form>
+
+		
+	</body>
+</html>
