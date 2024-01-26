@@ -21,47 +21,7 @@
 		
 	</head>
 	
-
-	
 	<body>
-	
-	
-	<!--
-	<php //doesn't work
-	
-	$civesErr = $child1Err = $child2Err = "";
-	$cives = $child1 = $child2 ="";
-	
-		if ($_SERVER["REQUEST_METHOD"] == "POST") {
-			if (empty($_POST["civil-state"])) {
-				$civesErr = "";
-			} else {
-				$name = test_input($_POST["civil-state"]);
-			}
-  
-
-			if (empty($_POST["child1"])) {
-				$passwErr = "";
-			} else {
-				$passw = test_input($_POST["child1"]);
-			}
-			
-			if (empty($_POST["child2"])) {
-				$passwErr = "";
-			} else {
-				$passw = test_input($_POST["child2"]);
-			}
-		}
-	
-	function test_input($data) {
-		$data = trim($data);
-		$data = stripslashes($data);
-		$data = htmlspecialchars($data);
-		return $data;
-	}
-
-	?>
-	-->
 		<table>
 		
 			<tr>
@@ -91,17 +51,10 @@
 							}
 						} else {
 							echo "NOTENE";
-						}
-						
-						
-						
+						}	
 					?>
 				</td>
-				
 			</tr>
-			
 		</table>
-	
-	
 	</body>
 </html>
